@@ -10,11 +10,11 @@ def main():
         choice = get_user_choice()
 
         if choice == "1":
-            expenses = add_expense(expenses)
+            expenses = add_expense(expenses)   #adding
         elif choice == "2":
-            view_expenses(expenses)
+            view_expenses(expenses)            #viewing
         elif choice == "3":
-            total = calculate_total(expenses)
+            total = calculate_total(expenses)   #calculating 
             print(f"\n--- Total Expenses ---")
             print(f"Total: ${total:.2f}")
         elif choice == "4":
@@ -25,4 +25,5 @@ def main():
             print("Invalid Choice!")
 
 if __name__ == "__main__":
+
     main()
