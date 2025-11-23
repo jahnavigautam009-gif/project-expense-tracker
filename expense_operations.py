@@ -1,7 +1,7 @@
 def add_expense(expenses):
     """Add a new expense"""
-    amount = input("Enter amount: ")
-    category = input("Enter category: ")
+    amount = input("Enter amount: ")   #enter your required amount
+    category = input("Enter category: ")  #enter your required category
     expenses.append(f"{amount} {category}")
     print("Expense Added!")
     return expenses
@@ -24,4 +24,5 @@ def calculate_total(expenses):
             total += float(amount)
         except (ValueError, IndexError):
             continue
+
     return total
