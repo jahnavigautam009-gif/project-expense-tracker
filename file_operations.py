@@ -1,6 +1,6 @@
 def load_expenses():
     """Load expenses from file"""
-    expenses = []
+    expenses = []  #intialise the expenses
     try:
         with open("expenses.txt", "r") as f:
             for line in f:
@@ -10,7 +10,8 @@ def load_expenses():
     return expenses
 
 def save_expenses(expenses):
-    """Save expenses to file"""
+    """Save expenses to file"""   #saving
     with open("expenses.txt", "w") as f:
         for e in expenses:
+
             f.write(e + "\n")
