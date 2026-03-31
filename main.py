@@ -1,7 +1,7 @@
 from file_operations import load_expenses, save_expenses
 from expense_operations import add_expense, view_expenses, calculate_total
 from user_interface import show_menu, get_user_choice
-
+from ml_model.train_model import predict_category
 def main():
     expenses = load_expenses()
     
