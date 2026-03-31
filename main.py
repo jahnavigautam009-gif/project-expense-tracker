@@ -1,5 +1,5 @@
 from file_operations import load_expenses, save_expenses
-from expense_operations import add_expense, view_expenses, calculate_total
+from expense_operations import add_expense, view_expenses, calculate_total, analyze_expenses
 from user_interface import show_menu, get_user_choice
 from ml_model.train_model import predict_category
 def main():
@@ -18,6 +18,9 @@ def main():
             print(f"\n--- Total Expenses ---")
             print(f"Total: ${total:.2f}")
         elif choice == "4":
+            analyze_expenses(expenses)
+    
+        elif choice == "5":
             save_expenses(expenses)
             print("Exiting... Goodbye!")
             break
