@@ -37,5 +37,13 @@ User enters an expense description (e.g., "pizza", "uber ride")
 The ML model predicts the category (Food, Travel, Shopping, etc.)
 The system stores the expense
 AI analyzes spending patterns and gives suggestions
+
+## Conclusion
+
+This project demonstrates how Artificial Intelligence can be applied to real-world problems like personal finance management.
+It simplifies expense tracking and helps users make smarter financial decisions.
+
+
+## AUTHOR: JAHNAVI GAUTAM - 25BCE10361
 Rule-Based AI → For generating spending insights
 
