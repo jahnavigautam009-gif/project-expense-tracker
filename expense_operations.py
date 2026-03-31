@@ -1,9 +1,15 @@
+from ml_model.train_model import predict_category
 def add_expense(expenses):
     """Add a new expense"""
-    amount = input("Enter amount: ")   #enter your required amount
-    category = input("Enter category: ")  #enter your required category
-    expenses.append(f"{amount} {category}")
+    amount = input("Enter amount: ")
+    description = input("Enter expense description: ")
+
+    category = predict_category(description)
+    print("Predicted category:", category)
+
+    expenses.append(f"{amount} - {description} - {category}")
     print("Expense Added!")
+
     return expenses
 
 def view_expenses(expenses):
