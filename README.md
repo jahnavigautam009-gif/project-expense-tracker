@@ -45,5 +45,5 @@ It simplifies expense tracking and helps users make smarter financial decisions.
 
 
 ## AUTHOR: JAHNAVI GAUTAM - 25BCE10361
-Rule-Based AI → For generating spending insights
+
 
