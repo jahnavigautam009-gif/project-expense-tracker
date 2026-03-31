@@ -1,56 +1,41 @@
-## Expense Tracker Project
+##  AI-POWERED Expense Tracker Project
 
-A simple Python-based application built as part of the Introduction to Programming course. This project helps users record daily expenses, view them, and calculate total spending — all using basic Python concepts.
+The AI-Powered Expense Tracker is a smart personal finance management system that helps users track, categorize, and analyze their expenses efficiently.
+It integrates basic Machine Learning techniques to automate decision-making and provide useful insights into spending habits.
 
+## Problem Statement
+
+Managing daily expenses manually is time-consuming and often leads to poor financial awareness.
+Users may forget to categorize expenses correctly or fail to identify unhealthy spending patterns.
+
+## Proposed Solution
+
+This project provides an intelligent solution by:
+
+Automatically categorizing expenses using Machine Learning
+Analyzing spending behavior
+Giving smart insights to improve financial decisions
+
+
+## AI Concepts Used
+Naive Bayes Classification → For automatic expense categorization
+Natural Language Processing (NLP) → Using CountVectorizer to process text input
 
 ## Features
+Add and manage daily expenses
+Automatic category prediction (AI-based)
+Spending analysis and insights
+Simple and user-friendly interface
 
-Add new expenses
+## Tech Stack
+Python
+Scikit-learn
+Machine Learning Algorithms
 
-View saved expenses
+## How It Works
+User enters an expense description (e.g., "pizza", "uber ride")
+The ML model predicts the category (Food, Travel, Shopping, etc.)
+The system stores the expense
+AI analyzes spending patterns and gives suggestions
+Rule-Based AI → For generating spending insights
 
-Calculate total expenses
-
-Store data permanently in a .txt file
-
-Beginner-friendly and uses only core Python (no advanced libraries)
-
-
-## Technologies Used
-
-Python (file handling, loops, conditionals, lists, functions)
-
-
-## Project Structure
-expense-tracker-project/ 
-│ ├── expense_tracker_project.py 
-# Main application code ├── expenses.txt # Stores all expenses permanently │ 
-├── /screenshots/ 
-# Output screenshots (to be added) 
-└──/recordings/ # Optional demo video (to be added)
-
-
-## How to Run
-Install Python 3
-
-Download or clone this repository
-
-Open a terminal inside the project folder
-
-Run:
-
-
-## Sample Output
----Expense Tracker---
-
-Add Expense
-View Expenses
-Total Expenses
-Exit
--Course Details
-
-Course: Introduction to Programming Platform: VITyarthi Flipped Classroom Project Semester: 1st Semester
-
--Author
-
-Jahnavi Gautam (First Semester Student at VITB – Python Beginner)
