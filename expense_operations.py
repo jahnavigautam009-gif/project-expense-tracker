@@ -20,6 +20,22 @@ def view_expenses(expenses):
     else:
         for i, e in enumerate(expenses, 1):
             print(f"{i}. {e}")
+def analyze_expenses(expenses):
+    category_totals = {}
+
+    for expense in expenses:
+        parts = expense.split(" - ")
+        amount = float(parts[0])
+        category = parts[2]
+
+        if category in category_totals:
+            category_totals[category] += amount
+        else:
+            category_totals[category] = amount
+
+    print("\n--- Expense Analysis ---")
+    for cat, total in category_totals.items():
+        print(f"{cat}: ₹{total}")
 
 def calculate_total(expenses):
     """Calculate total of all expenses"""
